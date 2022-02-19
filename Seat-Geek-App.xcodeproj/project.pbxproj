@@ -16,6 +16,12 @@
 		8EC8100D27C11F7A00462583 /* Seat_Geek_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8100C27C11F7A00462583 /* Seat_Geek_AppTests.swift */; };
 		8EC8101727C11F7A00462583 /* Seat_Geek_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8101627C11F7A00462583 /* Seat_Geek_AppUITests.swift */; };
 		8EC8101927C11F7A00462583 /* Seat_Geek_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8101827C11F7A00462583 /* Seat_Geek_AppUITestsLaunchTests.swift */; };
+		8EC8102A27C1267300462583 /* MoyaConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8102927C1267300462583 /* MoyaConfiguration.swift */; };
+		8EC8102C27C1269700462583 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8102B27C1269700462583 /* EndPoints.swift */; };
+		8EC8102E27C126DE00462583 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8102D27C126DE00462583 /* MockData.swift */; };
+		8EC8103027C1272C00462583 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8102F27C1272C00462583 /* BaseViewModel.swift */; };
+		8EC8103327C1277600462583 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8103227C1277600462583 /* UIViewController+Ext.swift */; };
+		8EC8103527C127A700462583 /* MKCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8103427C127A700462583 /* MKCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		8EC8101227C11F7A00462583 /* Seat-Geek-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Seat-Geek-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC8101627C11F7A00462583 /* Seat_Geek_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seat_Geek_AppUITests.swift; sourceTree = "<group>"; };
 		8EC8101827C11F7A00462583 /* Seat_Geek_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seat_Geek_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8EC8102927C1267300462583 /* MoyaConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaConfiguration.swift; sourceTree = "<group>"; };
+		8EC8102B27C1269700462583 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		8EC8102D27C126DE00462583 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		8EC8102F27C1272C00462583 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		8EC8103227C1277600462583 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		8EC8103427C127A700462583 /* MKCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +111,13 @@
 		8EC80FF427C11F7700462583 /* Seat-Geek-App */ = {
 			isa = PBXGroup;
 			children = (
+				8EC8102727C1257400462583 /* Modules */,
+				8EC8102627C1256100462583 /* Core */,
 				8EC80FF527C11F7700462583 /* AppDelegate.swift */,
 				8EC80FF727C11F7700462583 /* SceneDelegate.swift */,
+				8EC8102527C1253600462583 /* Resources */,
 				8EC80FF927C11F7700462583 /* ViewController.swift */,
 				8EC80FFB27C11F7700462583 /* Main.storyboard */,
-				8EC80FFE27C11F7900462583 /* Assets.xcassets */,
-				8EC8100027C11F7900462583 /* LaunchScreen.storyboard */,
-				8EC8100327C11F7900462583 /* Info.plist */,
 			);
 			path = "Seat-Geek-App";
 			sourceTree = "<group>";
@@ -125,6 +137,52 @@
 				8EC8101827C11F7A00462583 /* Seat_Geek_AppUITestsLaunchTests.swift */,
 			);
 			path = "Seat-Geek-AppUITests";
+			sourceTree = "<group>";
+		};
+		8EC8102527C1253600462583 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8EC8100327C11F7900462583 /* Info.plist */,
+				8EC8100027C11F7900462583 /* LaunchScreen.storyboard */,
+				8EC80FFE27C11F7900462583 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8EC8102627C1256100462583 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8EC8103127C1274800462583 /* Extension */,
+				8EC8102827C125C700462583 /* Moya */,
+				8EC8102F27C1272C00462583 /* BaseViewModel.swift */,
+				8EC8103427C127A700462583 /* MKCardView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8EC8102727C1257400462583 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8EC8102827C125C700462583 /* Moya */ = {
+			isa = PBXGroup;
+			children = (
+				8EC8102927C1267300462583 /* MoyaConfiguration.swift */,
+				8EC8102B27C1269700462583 /* EndPoints.swift */,
+				8EC8102D27C126DE00462583 /* MockData.swift */,
+			);
+			path = Moya;
+			sourceTree = "<group>";
+		};
+		8EC8103127C1274800462583 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8EC8103227C1277600462583 /* UIViewController+Ext.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +316,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EC8102A27C1267300462583 /* MoyaConfiguration.swift in Sources */,
+				8EC8102E27C126DE00462583 /* MockData.swift in Sources */,
+				8EC8103527C127A700462583 /* MKCardView.swift in Sources */,
+				8EC8102C27C1269700462583 /* EndPoints.swift in Sources */,
+				8EC8103027C1272C00462583 /* BaseViewModel.swift in Sources */,
 				8EC80FFA27C11F7700462583 /* ViewController.swift in Sources */,
 				8EC80FF627C11F7700462583 /* AppDelegate.swift in Sources */,
+				8EC8103327C1277600462583 /* UIViewController+Ext.swift in Sources */,
 				8EC80FF827C11F7700462583 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
