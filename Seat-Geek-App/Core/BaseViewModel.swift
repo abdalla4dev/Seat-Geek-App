@@ -7,7 +7,7 @@
 
 import RxCocoa
 import RxSwift
-extension
+
 class BaseViewModel {
     let error = PublishSubject<String?>()
     let loading = BehaviorRelay<Bool?>(value: nil)

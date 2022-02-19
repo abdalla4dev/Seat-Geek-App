@@ -54,15 +54,6 @@ class DefaultAlamofireManager: Session {
 
 extension Reactive where Base: MoyaProviderType {
     func request(_ token: Base.Target, callbackQueue: DispatchQueue? = nil) -> Single<Response> {
-        if token is AuthApi || token is RegisterApi {
-            return getRequest(token, callbackQueue: callbackQueue).filterSuccessfulStatusCodes()
-        }
-        return getRequest(token, callbackQueue: callbackQueue)
-            .retryWhenTokenExpired()
-            .filterSuccessfulStatusCodes()
-    }
-    
-    func getRequest(_ token: Base.Target, callbackQueue: DispatchQueue? = nil) -> Single<Response> {
         return Single.create { [weak base] single in
             let cancellableToken = base?.request(token, callbackQueue: callbackQueue, progress: nil) { result in
                 switch result {
@@ -72,10 +63,12 @@ extension Reactive where Base: MoyaProviderType {
                     single(.error(error))
                 }
             }
+
             return Disposables.create {
                 cancellableToken?.cancel()
             }
         }
+        .filterSuccessfulStatusCodes()
     }
 }
 
@@ -88,3 +81,15 @@ extension TargetType {
     }
 }
 
+
+
+
+func JSONResponseDataFormatter(_ data: Data) -> String {
+    do {
+        let dataAsJSON = try JSONSerialization.jsonObject(with: data)
+        let prettyData = try JSONSerialization.data(withJSONObject: dataAsJSON, options: .prettyPrinted)
+        return String(data: prettyData, encoding: .utf8) ?? String(data: data, encoding: .utf8) ?? ""
+    } catch {
+        return String(data: data, encoding: .utf8) ?? ""
+    }
+}
