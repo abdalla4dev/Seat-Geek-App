@@ -31,6 +31,19 @@
 		8EC8104027C128DA00462583 /* Container+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8103B27C128DA00462583 /* Container+ViewModel.swift */; };
 		8EC8104C27C131A700462583 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC8104B27C131A700462583 /* Color.xcassets */; };
 		8EC8104E27C1322400462583 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8104D27C1322400462583 /* R.generated.swift */; };
+		8EC8105127C13BDA00462583 /* SeatGeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8105027C13BDA00462583 /* SeatGeekViewController.swift */; };
+		8EC8105427C13BF400462583 /* SeatGeekDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8105327C13BF400462583 /* SeatGeekDetailsViewController.swift */; };
+		8EC8105627C13F2100462583 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8105527C13F2100462583 /* BaseViewController.swift */; };
+		8EC8105D27C1407700462583 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8105C27C1407700462583 /* UITableView+Ext.swift */; };
+		8EC8105F27C141A200462583 /* SeatGeekViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8105E27C141A200462583 /* SeatGeekViewModel.swift */; };
+		8EC8106127C19BA600462583 /* SeatGeekApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8106027C19BA500462583 /* SeatGeekApi.swift */; };
+		8EC8106327C19C6A00462583 /* APISetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8106227C19C6A00462583 /* APISetting.swift */; };
+		8EC8106527C19FA200462583 /* SeatGeekServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8106427C19FA200462583 /* SeatGeekServiceManager.swift */; };
+		8EC8106727C1A0EE00462583 /* SeatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8106627C1A0EE00462583 /* SeatModel.swift */; };
+		8EC8106A27C1A41200462583 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8106927C1A41200462583 /* EventCell.swift */; };
+		8EC8106C27C1A5DB00462583 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8106B27C1A5DB00462583 /* Date+Ext.swift */; };
+		8EC8106E27C1A8AB00462583 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8106D27C1A8AB00462583 /* Loader.swift */; };
+		8EC8107027C1B1EE00462583 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8106F27C1B1EE00462583 /* UIImage+Ext.swift */; };
 		9E9C61A1093BE3C92D798359 /* Pods_Seat_Geek_App_Seat_Geek_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95EB29638EA0B7BB16A83D7E /* Pods_Seat_Geek_App_Seat_Geek_AppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +97,19 @@
 		8EC8103B27C128DA00462583 /* Container+ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Container+ViewModel.swift"; sourceTree = "<group>"; };
 		8EC8104B27C131A700462583 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		8EC8104D27C1322400462583 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		8EC8105027C13BDA00462583 /* SeatGeekViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatGeekViewController.swift; sourceTree = "<group>"; };
+		8EC8105327C13BF400462583 /* SeatGeekDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatGeekDetailsViewController.swift; sourceTree = "<group>"; };
+		8EC8105527C13F2100462583 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8EC8105C27C1407700462583 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		8EC8105E27C141A200462583 /* SeatGeekViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatGeekViewModel.swift; sourceTree = "<group>"; };
+		8EC8106027C19BA500462583 /* SeatGeekApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatGeekApi.swift; sourceTree = "<group>"; };
+		8EC8106227C19C6A00462583 /* APISetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISetting.swift; sourceTree = "<group>"; };
+		8EC8106427C19FA200462583 /* SeatGeekServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatGeekServiceManager.swift; sourceTree = "<group>"; };
+		8EC8106627C1A0EE00462583 /* SeatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatModel.swift; sourceTree = "<group>"; };
+		8EC8106927C1A41200462583 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		8EC8106B27C1A5DB00462583 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		8EC8106D27C1A8AB00462583 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		8EC8106F27C1B1EE00462583 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
 		95EB29638EA0B7BB16A83D7E /* Pods_Seat_Geek_App_Seat_Geek_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Seat_Geek_App_Seat_Geek_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0EB28CA361DFECAB1771411 /* Pods_Seat_Geek_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Seat_Geek_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E616C3BC2B10830DB5C9C2 /* Pods-Seat-Geek-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Seat-Geek-App.release.xcconfig"; path = "Target Support Files/Pods-Seat-Geek-App/Pods-Seat-Geek-App.release.xcconfig"; sourceTree = "<group>"; };
@@ -199,6 +225,9 @@
 				8EC8102827C125C700462583 /* Moya */,
 				8EC8102F27C1272C00462583 /* BaseViewModel.swift */,
 				8EC8103427C127A700462583 /* MKCardView.swift */,
+				8EC8105527C13F2100462583 /* BaseViewController.swift */,
+				8EC8106227C19C6A00462583 /* APISetting.swift */,
+				8EC8106D27C1A8AB00462583 /* Loader.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -225,6 +254,9 @@
 			isa = PBXGroup;
 			children = (
 				8EC8103227C1277600462583 /* UIViewController+Ext.swift */,
+				8EC8105C27C1407700462583 /* UITableView+Ext.swift */,
+				8EC8106B27C1A5DB00462583 /* Date+Ext.swift */,
+				8EC8106F27C1B1EE00462583 /* UIImage+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -263,6 +295,8 @@
 		8EC8104327C129B400462583 /* Remote */ = {
 			isa = PBXGroup;
 			children = (
+				8EC8106027C19BA500462583 /* SeatGeekApi.swift */,
+				8EC8106427C19FA200462583 /* SeatGeekServiceManager.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -270,6 +304,7 @@
 		8EC8104427C129C400462583 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8EC8106627C1A0EE00462583 /* SeatModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -277,6 +312,7 @@
 		8EC8104527C129CA00462583 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8EC8105E27C141A200462583 /* SeatGeekViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -284,9 +320,36 @@
 		8EC8104627C129D900462583 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8EC8105227C13BDF00462583 /* SeatGeekDetailsViewController */,
+				8EC8104F27C13BBB00462583 /* SeatGeekViewController */,
 				8EC80FFB27C11F7700462583 /* SeatGeek.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		8EC8104F27C13BBB00462583 /* SeatGeekViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8EC8106827C1A40600462583 /* Cells */,
+				8EC8105027C13BDA00462583 /* SeatGeekViewController.swift */,
+			);
+			path = SeatGeekViewController;
+			sourceTree = "<group>";
+		};
+		8EC8105227C13BDF00462583 /* SeatGeekDetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8EC8105327C13BF400462583 /* SeatGeekDetailsViewController.swift */,
+			);
+			path = SeatGeekDetailsViewController;
+			sourceTree = "<group>";
+		};
+		8EC8106827C1A40600462583 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8EC8106927C1A41200462583 /* EventCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		DD7AC4C44F61A10A972090C6 /* Pods */ = {
@@ -565,19 +628,32 @@
 			files = (
 				8EC8102A27C1267300462583 /* MoyaConfiguration.swift in Sources */,
 				8EC8102E27C126DE00462583 /* MockData.swift in Sources */,
+				8EC8106A27C1A41200462583 /* EventCell.swift in Sources */,
 				8EC8104E27C1322400462583 /* R.generated.swift in Sources */,
 				8EC8103527C127A700462583 /* MKCardView.swift in Sources */,
 				8EC8103E27C128DA00462583 /* Container+ServicesOffline.swift in Sources */,
+				8EC8105627C13F2100462583 /* BaseViewController.swift in Sources */,
+				8EC8105D27C1407700462583 /* UITableView+Ext.swift in Sources */,
+				8EC8106E27C1A8AB00462583 /* Loader.swift in Sources */,
 				8EC8103C27C128DA00462583 /* Container+RegisterDependencies.swift in Sources */,
 				8EC8103F27C128DA00462583 /* Container+Services.swift in Sources */,
 				8EC8102C27C1269700462583 /* EndPoints.swift in Sources */,
 				8EC8103027C1272C00462583 /* BaseViewModel.swift in Sources */,
+				8EC8105F27C141A200462583 /* SeatGeekViewModel.swift in Sources */,
 				8EC80FFA27C11F7700462583 /* ViewController.swift in Sources */,
+				8EC8106527C19FA200462583 /* SeatGeekServiceManager.swift in Sources */,
+				8EC8106C27C1A5DB00462583 /* Date+Ext.swift in Sources */,
+				8EC8105427C13BF400462583 /* SeatGeekDetailsViewController.swift in Sources */,
+				8EC8106727C1A0EE00462583 /* SeatModel.swift in Sources */,
 				8EC80FF627C11F7700462583 /* AppDelegate.swift in Sources */,
 				8EC8103327C1277600462583 /* UIViewController+Ext.swift in Sources */,
+				8EC8107027C1B1EE00462583 /* UIImage+Ext.swift in Sources */,
+				8EC8106127C19BA600462583 /* SeatGeekApi.swift in Sources */,
 				8EC80FF827C11F7700462583 /* SceneDelegate.swift in Sources */,
 				8EC8104027C128DA00462583 /* Container+ViewModel.swift in Sources */,
 				8EC8103D27C128DA00462583 /* Container+Repositories.swift in Sources */,
+				8EC8105127C13BDA00462583 /* SeatGeekViewController.swift in Sources */,
+				8EC8106327C19C6A00462583 /* APISetting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
