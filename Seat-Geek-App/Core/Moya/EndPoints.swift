@@ -10,7 +10,7 @@ import Foundation
 
 class EndPoints {
     enum SeatGeekAPI {
-        static let search = ""
+        static let GET_SEAT_GEEK = "/events"
     }
     
     

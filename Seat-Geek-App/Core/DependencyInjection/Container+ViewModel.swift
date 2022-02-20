@@ -11,5 +11,6 @@ import SwinjectAutoregistration
 
 extension Container {
     func registerViewModels() {
+        autoregister(SeatGeekViewModel.self, initializer: SeatGeekViewModel.init)
     }
 }

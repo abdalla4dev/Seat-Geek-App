@@ -10,5 +10,7 @@ import SwinjectAutoregistration
 
 extension Container {
     func registerServices() {
+        autoregister(SeatGeekService.self, initializer: SeatGeekServiceManager.init).inObjectScope(.container)
+
     }
 }
